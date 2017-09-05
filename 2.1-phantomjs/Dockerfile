@@ -1,4 +1,4 @@
-FROM hoshinotsuyoshi/ruby:2.1.3
+FROM hoshinotsuyoshi/ruby:2.1.4
 
 RUN cd /tmp && \
     curl -LO https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2 && \
