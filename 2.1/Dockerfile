@@ -8,8 +8,8 @@ RUN mkdir -p /usr/local/etc \
 	} >> /usr/local/etc/gemrc
 
 ENV RUBY_MAJOR 2.1
-ENV RUBY_VERSION 2.1.3
-ENV RUBY_DOWNLOAD_SHA256 28832f4c198f7ee3909ee01d30aac7a3ec4eb1968f8f2db22b0b052329c3075c
+ENV RUBY_VERSION 2.1.4
+ENV RUBY_DOWNLOAD_SHA256 e1cc5cbbcaa8644e282f04763d96057ddd6f443338a5019200e8726273e84fcf
 ENV RUBYGEMS_VERSION 2.6.8
 
 # some of ruby's build scripts are written in ruby
@@ -55,7 +55,7 @@ RUN set -ex \
 	\
 	&& gem update --system "$RUBYGEMS_VERSION"
 
-ENV BUNDLER_VERSION 1.13.7
+ENV BUNDLER_VERSION 1.12.3
 
 RUN gem install bundler --version "$BUNDLER_VERSION"
 
