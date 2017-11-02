@@ -10,7 +10,7 @@ RUN mkdir -p /usr/local/etc \
 ENV RUBY_MAJOR 2.1
 ENV RUBY_VERSION 2.1.4
 ENV RUBY_DOWNLOAD_SHA256 e1cc5cbbcaa8644e282f04763d96057ddd6f443338a5019200e8726273e84fcf
-ENV RUBYGEMS_VERSION 2.6.14
+ENV RUBYGEMS_VERSION 2.7.0
 
 # some of ruby's build scripts are written in ruby
 #   we purge system ruby later to make sure our final image uses what we just built
